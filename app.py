@@ -1,15 +1,9 @@
 import os
 import requests
-import redis
 import json
-import asyncio
-from functools import wraps
-from math import floor
 import re
-from requests_oauthlib import OAuth2Session
 from flask import Flask, session, request, url_for, render_template, redirect, \
  jsonify, flash, abort, Response, send_file
-from itsdangerous import JSONWebSignatureSerializer
 app = Flask(__name__)
 app.config['SECRET_KEY'] = os.environ.get("SECRET_KEY",
                                           "dawdawdadwa&çed&ndlnad&pjéà&jdndqld"
